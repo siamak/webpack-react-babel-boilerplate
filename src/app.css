@@ -1,0 +1,21 @@
+:global(body) {
+	background-color: #eee;
+	font-family: Avenir, Helvetica, Tahoma;
+	font-weight: 200;
+	color: #343434;
+}
+
+:local(.myWrapper) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+:local(.myWrapper) :local(.hero) {
+	font-size: 3rem;
+}
+:local(.person) {
+	color: #00BCD4;
+}
