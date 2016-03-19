@@ -5,10 +5,12 @@ This repo is a boilerplate for Webpack-React-Babel project. You could use it as 
 Boilerplate for kick starting a project with the following technologies:
 * [React](https://github.com/facebook/react) (ver 0.14)
 * [Babel](http://babeljs.io)
-* [Webpack](http://webpack.github.io) for bundling
+* [Webpack](http://webpack.github.io)
 * [Webpack Dev Server](http://webpack.github.io/docs/webpack-dev-server.html)
+* [CSS-Loader](https://github.com/webpack/css-loader)
 * Lint with [ESlint](http://eslint.org) and [Airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)'s `.eslintrc` and [ESlint for React](https://github.com/yannickcr/eslint-plugin-react)
 * Support [hot module replacement](https://webpack.github.io/docs/hot-module-replacement.html)
+* Support NODE_ENV – Production `webpack.production.config.js` Development `webpack.config.js`
 
 ## 🔥 How to use
 
@@ -27,7 +29,7 @@ For Serve app:
 $ npm start
 ```
 
-For Deploy app (Minification mode):
+For Deploy app (UglifyJSPlugin – bundling):
 ```bash
 $ npm run deploy
 ```

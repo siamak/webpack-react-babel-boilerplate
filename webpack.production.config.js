@@ -2,27 +2,12 @@
 var path              = require('path'),
 	webpack           = require('webpack'),
 	autoprefixer      = require('autoprefixer'),
-	OpenBrowserPlugin = require('open-browser-webpack-plugin');
-
-var configServe = {
-	port: 9100,
-};
+	uglifyJsPlugin    = webpack.optimize.UglifyJsPlugin;
 
 
 module.exports = {
-	devServer: {
-		hot: true,
-		inline: true,
-		historyApiFallback: true,
-		progress: true,
-		port: configServe.port,
-	},
-	// entry: path.resolve(__dirname, './src/app.jsx'),
-
 	entry: [
-		'webpack/hot/dev-server',
-		'webpack-dev-server/client?http://localhost:' + configServe.port,
-		path.resolve(__dirname, './src/app.jsx'),
+		path.resolve(__dirname, 'src/app.jsx'),
 	],
 	output: {
 		path: __dirname,
@@ -49,21 +34,19 @@ module.exports = {
 		autoprefixer({ browsers: ['last 5 versions'] }),
 	],
 
-	plugins: [
-		// Avoid publishing files when compilation fails
-		new webpack.NoErrorsPlugin(),
-		new webpack.HotModuleReplacementPlugin(),
-		new OpenBrowserPlugin({ url: 'http://localhost:' + configServe.port }),
-	],
-
 	resolve: {
 		extensions: ['', '.js', '.jsx'],
 	},
 
-	stats: {
-		// Nice colored output
-		colors: true,
-	},
+	plugins: [
+		new webpack.optimize.DedupePlugin(),
+		new uglifyJsPlugin({
+			compress: {
+				warnings: false
+			}
+		}),
+	],
+
 
 	// Create Sourcemaps for the bundle
 	devtool: 'source-map',

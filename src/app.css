@@ -3,6 +3,13 @@
 	font-family: Avenir, Helvetica, Tahoma;
 	font-weight: 200;
 	color: #343434;
+	margin: 0;
+}
+:global(a) {
+	color: #777;
+}
+:global(a):hover {
+	color: #00BCD4;
 }
 
 :local(.myWrapper) {
@@ -13,9 +20,25 @@
 	min-height: 100vh;
 	min-width: 100vw;
 }
+
 :local(.myWrapper) :local(.hero) {
 	font-size: 3rem;
 }
+
+:local(.lead) {
+	display: block;
+	margin: 0 1em;
+	font-size: calc(.2vw + 1rem);
+	line-height: 1;
+	opacity: .8;
+	/*letter-spacing: -.1vw;*/
+}
+
 :local(.person) {
 	color: #00BCD4;
+}
+
+:local(.person):focus{
+	outline: 0;
+	border-bottom: 2px dashed currentcolor;
 }
