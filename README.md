@@ -1,5 +1,7 @@
 # 🍉 Webpack–React–Babel Boilerplate:
 
+[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](https://github.com/siamakmokhtari/webpack-react-babel-boilerplate/)
+
 This repo is a boilerplate for Webpack-React-Babel project. You could use it as a base to build your own web app.
 
 Boilerplate for kick starting a project with the following technologies:
