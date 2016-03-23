@@ -1,0 +1,62 @@
+@mixin box($padding: 10px) {
+	padding: $padding;
+	color: desaturate(#3d435e, 50%);
+	background-color: #3d435e;
+}
+
+:local .box {
+	@include box(1rem);
+	.hero-title{
+		margin: 0;
+		margin-bottom: 1em;
+	}
+}
+
+
+// colors
+$color_gallery_approx: #eee;
+$color_tuatara_approx: #343434;
+$color_tapa_approx: #777;
+$color_robins_egg_blue_approx: saturate(lighten(#d0a8a0, 2.1), 10);
+
+body {
+	background-color: $color_gallery_approx;
+	font-family: Avenir, Helvetica, Tahoma;
+	font-weight: 200;
+	color: $color_tuatara_approx;
+	margin: 0;
+}
+a {
+	color: $color_tapa_approx;
+	&:hover {
+		color: $color_robins_egg_blue_approx;
+	}
+}
+
+:local .myWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	min-height: 100vh;
+	min-width: 100vw;
+	.hero {
+		font-size: 3rem;
+	}
+}
+
+:local .lead {
+	display: block;
+	margin: 0 1em;
+	font-size: calc(96% + 0.5vw);
+	line-height: 1.5;
+	opacity: .8;
+}
+
+:local .person {
+	color: $color_robins_egg_blue_approx;
+	&:focus {
+		outline: 0;
+		border-bottom: 2px dashed currentcolor;
+	}
+}

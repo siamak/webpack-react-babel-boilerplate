@@ -1,5 +1,7 @@
 # 🍉 Webpack–React–Babel Boilerplate:
 
+[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](https://github.com/siamakmokhtari/webpack-react-babel-boilerplate/)
+
 This repo is a boilerplate for Webpack-React-Babel project. You could use it as a base to build your own web app.
 
 Boilerplate for kick starting a project with the following technologies:
@@ -8,6 +10,7 @@ Boilerplate for kick starting a project with the following technologies:
 * [Webpack](http://webpack.github.io)
 * [Webpack Dev Server](http://webpack.github.io/docs/webpack-dev-server.html)
 * [CSS-Loader](https://github.com/webpack/css-loader)
+* [Sass-Loader](https://github.com/jtangelder/sass-loader)
 * Lint with [ESlint](http://eslint.org) and [Airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)'s `.eslintrc` and [ESlint for React](https://github.com/yannickcr/eslint-plugin-react)
 * Support [hot module replacement](https://webpack.github.io/docs/hot-module-replacement.html)
 * Support NODE_ENV – Production `webpack.production.config.js` Development `webpack.config.js`
@@ -33,7 +36,7 @@ For Deploy app (UglifyJSPlugin – bundling):
 ```bash
 $ npm run deploy
 ```
-You should see a new browser tap opening and a title of "Hello World" in http://127.0.0.1:9100 || http://localhost:9100.
+You should see a new browser tap opening and a title of "Hello World" in `http://127.0.0.1:9100` || `http://localhost:9100`.
 
 
 

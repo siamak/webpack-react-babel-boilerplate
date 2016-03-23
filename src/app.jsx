@@ -1,6 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Styles from './app.css';
+
+//
+// Stylesheets :
+import CSSStyles from './styles.css'; // ## Disabled
+import Styles from './styles.scss'; // ## Enabled
+
+//
+// Just For watching `css-loader`. It has been used `sass-laoder`
+console.log(CSSStyles);
 
 class App extends React.Component {
 	constructor(props) {
@@ -11,7 +19,7 @@ class App extends React.Component {
 	}
 	render() {
 		return (
-			<div className={Styles.myWrapper}>
+			<section className={Styles.myWrapper}>
 				<h1 className={Styles.hero}>
 					<span
 						className={Styles.person}
@@ -22,7 +30,7 @@ class App extends React.Component {
 					, Hello React!
 				</h1>
 				<h3 className={Styles.lead}>Webpack–Reactjs–Babel `ES6` — <a href="https://github.com/siamakmokhtari/webpack-react-babel-boilerplate">Fork me</a>.</h3>
-			</div>
+			</section>
 		);
 	}
 }
