@@ -43,10 +43,16 @@ module.exports = {
 				include: path.resolve(__dirname, 'src'),
 				loader: 'style-loader!css-loader!postcss-loader',
 			},
+			{
+				// SCSS files :
+				test: /\.scss?$/,
+				include: path.resolve(__dirname, 'src'),
+				loader: 'style-loader!css-loader!sass!postcss-loader',
+			},
 		],
 	},
 	postcss: [
-		autoprefixer({ browsers: ['last 5 versions'] }),
+		autoprefixer({ browsers: ['last 3 versions'] }),
 	],
 
 	plugins: [

@@ -1,18 +1,18 @@
-:global(body) {
+body {
 	background-color: #eee;
 	font-family: Avenir, Helvetica, Tahoma;
 	font-weight: 200;
 	color: #343434;
 	margin: 0;
 }
-:global(a) {
+a {
 	color: #777;
 }
-:global(a):hover {
+a:hover {
 	color: #00BCD4;
 }
 
-:local(.myWrapper) {
+:local .myWrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -21,11 +21,11 @@
 	min-width: 100vw;
 }
 
-:local(.myWrapper) :local(.hero) {
+:local .myWrapper .hero {
 	font-size: 3rem;
 }
 
-:local(.lead) {
+:local .lead {
 	display: block;
 	margin: 0 1em;
 	font-size: calc(.2vw + 1rem);
@@ -34,11 +34,11 @@
 	/*letter-spacing: -.1vw;*/
 }
 
-:local(.person) {
+:local .person {
 	color: #00BCD4;
 }
 
-:local(.person):focus{
+:local .person:focus{
 	outline: 0;
 	border-bottom: 2px dashed currentcolor;
 }
