@@ -32,7 +32,7 @@ module.exports = {
 				// SCSS files :
 				test: /\.scss?$/,
 				include: path.resolve(__dirname, 'src'),
-				loader: 'style-loader!css-loader!sass!postcss-loader',
+				loader: 'style-loader!css-loader!postcss-loader!sass',
 			},
 		],
 	},
