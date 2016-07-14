@@ -5,7 +5,7 @@
 This repo is a boilerplate for Webpack-React-Babel project. You could use it as a base to build your own web app.
 
 Boilerplate for kick starting a project with the following technologies:
-* [React](https://github.com/facebook/react) (ver 0.14)
+* [React](https://github.com/facebook/react) (ver 15)
 * [Babel](http://babeljs.io)
 * [Webpack](http://webpack.github.io)
 * [Webpack Dev Server](http://webpack.github.io/docs/webpack-dev-server.html)
