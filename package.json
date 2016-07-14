@@ -4,7 +4,8 @@
   "description": "Webpack, React, Babel for an app!",
   "scripts": {
     "start": "webpack-dev-server --devtool eval --progress --colors",
-    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
+    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js",
+	"lint": "./node_modules/.bin/eslint --ext jsx --ext js src || true"
   },
   "keywords": [
     "webpack",
