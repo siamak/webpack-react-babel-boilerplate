@@ -36,7 +36,7 @@ For Deploy app (UglifyJSPlugin – bundling):
 ```bash
 $ npm run deploy
 ```
-You should see a new browser tap opening and a title of "Hello World" in `http://127.0.0.1:9100` || `http://localhost:9100`.
+You should see a new browser tab opening and a title of "Hello World" in `http://127.0.0.1:9100` || `http://localhost:9100`.
 
 
 
@@ -46,7 +46,7 @@ Copyright (c) 2016 Siamak Mokhtari. Licensed under [MIT](http://siamak.mit-licen
 ```
 The MIT License (MIT)
 
-Copyright (c) 2015 Siamak Mokhtari s.mokhtari75@gmail.com
+Copyright (c) 2016 Siamak Mokhtari s.mokhtari75@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
