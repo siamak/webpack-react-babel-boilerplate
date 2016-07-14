@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Webpack, React, Babel for an app!",
   "scripts": {
-    "start": "webpack-dev-server --devtool eval --progress --hot --colors",
+    "start": "webpack-dev-server --devtool eval --progress --colors",
     "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
   },
   "keywords": [
